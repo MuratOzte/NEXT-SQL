@@ -2,10 +2,10 @@ import pool from '@/lib/db';
 
 export default function Home() {
     const user = {
-        id: 6,
-        name: 'Dali',
-        surname: 'Seli',
-        location: 'Dankara',
+        id: 7,
+        name: 'Bali',
+        surname: 'Deli',
+        location: 'Kankara',
     };
 
     const fetchData = async () => {
@@ -25,5 +25,10 @@ export default function Home() {
     };
     fetchData();
 
-    return <div>Merhaba</div>;
+    return <form>
+        <input type="text" />
+        <input type="text" />
+        <input type="text" />
+        <input type="text" />
+    </form>;
 }
